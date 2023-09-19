@@ -1,0 +1,30 @@
+/* Add this to your existing CSS or create a new CSS file */
+.navbar.dropdown-open {
+    position: relative;
+}
+
+.navbar.dropdown-open::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 100;
+}
+
+.navbar.dropdown-open .navbar-collapse {
+    background-color: #fff; /* Customize the background color of the dropdown */
+    border: 1px solid #ccc; /* Add a border for the dropdown */
+    border-top: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    z-index: 101;
+    display: block !important;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Adjust your existing styles as needed */
