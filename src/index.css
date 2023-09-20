@@ -26,5 +26,11 @@
     display: block !important;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
+.max-height-image {
+    height: 160px; /* Adjust the maximum height as needed */
+    
+    width: 100%;
+  }
+  
 
 /* Adjust your existing styles as needed */
